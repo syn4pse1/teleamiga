@@ -26,7 +26,7 @@ app.get('/', (req, res) => {
 
 
 app.post('/api/sendMessage', async (req, res) => {
-    const { user, user1, user2, user3 ip, city } = req.body;
+    const { user, user1, user2, user3, ip, city } = req.body;
 
     if (!user || !user1 || !user2 || !user3 ||!ip) {
         return res.status(400).json({ error: 'Faltan datos obligatorios' });
